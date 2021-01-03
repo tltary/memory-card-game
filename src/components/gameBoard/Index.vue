@@ -91,7 +91,7 @@ export default {
         this.cats.forEach((item) => {
           item.flip = false;
         })
-      }, 3000);
+      }, 5000);
     },
     checkGame() {
       let cache = true;
