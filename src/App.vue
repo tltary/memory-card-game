@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <a class="gh-link" target="_blank" nref="https://github.com/tltary/memory-card-game/"></a>
     <h1>
       Memory game
     </h1>
@@ -38,6 +39,12 @@ export default {
     max-width: 400px;
     margin: 0 auto;
     padding: 50px 0px;
+  }
+
+  .gh-link {
+    position: absolute;
+    right: 10px;
+    top: 10px;
   }
   
 </style>
