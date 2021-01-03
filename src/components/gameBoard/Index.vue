@@ -80,6 +80,7 @@ export default {
           first: null,
           last: null,
         }
+        this.checkGame();
       }, 500)
     },
     gameRefresh() {
@@ -91,6 +92,18 @@ export default {
           item.flip = false;
         })
       }, 3000);
+    },
+    checkGame() {
+      let cache = true;
+      this.cats.forEach((item) => {
+        if (!item.flip) {
+          cache = item.flip;
+        }
+      })
+      if (cache) {
+        alert('You WIN!');
+        this.gameRefresh();
+      }
     },
     getCats() {
       axios
