@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <a class="gh-link" target="_blank" nref="https://github.com/tltary/memory-card-game/">
+    <a class="gh-link" target="_blank" href="https://github.com/tltary/memory-card-game/">
       GitHub
     </a>
     <h1>
