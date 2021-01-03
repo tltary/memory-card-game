@@ -1,5 +1,8 @@
 <template>
   <div>
+    <p>
+      Tries count - {{ triesCount }}
+    </p>
     <div class="board__block" v-if="cats.length > 0">
       <div
         v-for="(cat, key) in cats"
@@ -36,7 +39,8 @@ export default {
       current: {
         first: null,
         second: null,
-      }
+      },
+      triesCount: 0,
     };
   },
   props: {
@@ -80,6 +84,7 @@ export default {
           first: null,
           last: null,
         }
+        this.triesCount += 1;
         this.checkGame();
       }, 500)
     },
