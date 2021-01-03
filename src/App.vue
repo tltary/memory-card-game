@@ -12,12 +12,6 @@ import GameBoard from './components/gameBoard/Index';
 
 export default {
   name: 'App',
-  data() {
-    return {
-      gameOn: false,
-      gameLimit: 0,
-    };
-  },
   components: {
     'game-board': GameBoard,
   },
