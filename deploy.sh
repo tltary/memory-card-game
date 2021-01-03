@@ -13,6 +13,6 @@ git commit -m 'deploy'
 
 git remote add origin git@github.com:tltary/memory-card-game-demo.git
 git branch -M main
-git push -u origin main
+git push -f origin main
 
 cd -
