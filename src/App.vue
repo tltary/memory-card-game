@@ -1,28 +1,49 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <h1>
+      Memory game
+    </h1>
+    <game-board :limit="16" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import GameBoard from './components/gameBoard/Index';
 
 export default {
   name: 'App',
+  data() {
+    return {
+      gameOn: false,
+      gameLimit: 0,
+    };
+  },
   components: {
-    HelloWorld
-  }
+    'game-board': GameBoard,
+  },
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+    background-color: #FF7F50;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 50px 0px;
+  }
+  
 </style>
