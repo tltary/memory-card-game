@@ -96,6 +96,7 @@ export default {
         this.cats.forEach((item) => {
           item.flip = false;
         })
+        this.triesCount = 0;
       }, 5000);
     },
     checkGame() {
